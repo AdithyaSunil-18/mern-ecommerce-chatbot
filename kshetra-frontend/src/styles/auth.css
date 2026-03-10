@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ================= BACKGROUND ================= */
+.auth-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(212,175,55,0.15), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(212,175,55,0.08), transparent 40%),
+    linear-gradient(135deg, #0c0c0c, #111, #0c0c0c);
+
+  background-size: 200% 200%;
+  animation: luxuryMove 18s ease infinite;
+}
+
+@keyframes luxuryMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ================= CARD ================= */
+.auth-card {
+  width: 380px;
+  padding: 45px 35px;
+  border-radius: 28px;
+  text-align: center;
+  color: #fff;
+
+  background: rgba(20,20,20,0.85);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(212,175,55,0.25);
+  box-shadow: 0 40px 100px rgba(0,0,0,0.7);
+
+  animation: fadeIn 0.6s ease;
+}
+
+.auth-card h2 {
+  margin-bottom: 6px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+/* ================= FLOATING INPUTS ================= */
+.floating-input {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.floating-input input {
+  width: 100%;
+  padding: 16px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(212,175,55,0.2);
+  outline: none;
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.floating-input input:focus {
+  border: 1px solid #d4af37;
+  box-shadow: 0 0 15px rgba(212,175,55,0.3);
+}
+
+.floating-input label {
+  position: absolute;
+  left: 14px;
+  top: 16px;
+  color: #aaa;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.floating-input input:focus + label,
+.floating-input input:valid + label {
+  top: -9px;
+  left: 12px;
+  font-size: 11px;
+  background: #111;
+  padding: 0 8px;
+  border-radius: 6px;
+  color: #d4af37;
+}
+
+/* ================= PASSWORD TOGGLE ================= */
+.toggle-pass {
+  position: absolute;
+  right: 14px;
+  top: 16px;
+  font-size: 12px;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-pass:hover {
+  color: #d4af37;
+}
+
+/* ================= BUTTON ================= */
+.auth-btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 40px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.4s ease;
+
+  background: #d4af37;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 50px rgba(212,175,55,0.5);
+}
+
+/* ================= FOOTER ================= */
+.auth-footer {
+  margin-top: 22px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.auth-footer span {
+  color: #d4af37;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.auth-footer span:hover {
+  text-decoration: underline;
+}
+
+/* ================= ERROR ================= */
+.error-text {
+  color: #ff4d4d;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* ================= PASSWORD STRENGTH ================= */
+.strength {
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 14px;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.strength.weak {
+  color: #ff4d4d;
+}
+
+.strength.medium {
+  color: #f7c948;
+}
+
+.strength.strong {
+  color: #3ad46b;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.shake {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}

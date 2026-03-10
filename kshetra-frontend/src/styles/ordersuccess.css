@@ -1,0 +1,302 @@
+/* ========================= */
+/* SUCCESS PAGE - BLACK & GOLD LUXURY THEME */
+/* ========================= */
+.success-page {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* CARD */
+.success-card {
+  background: rgba(20, 20, 20, 0.95);
+  padding: 60px 50px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.8s ease;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(12px);
+  color: #f5e6a3;
+}
+
+.success-card:hover {
+  transform: translateY(-5px);
+}
+
+/* CHECKMARK */
+.checkmark {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #d4af37, #f5e6a3);
+  color: black;
+  font-size: 50px;
+  border-radius: 50%;
+  line-height: 100px;
+  margin: auto;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 35px rgba(212,175,55,0.5);
+  animation: pop 0.5s ease;
+}
+
+/* HEADER TEXT */
+h1 {
+  margin-bottom: 12px;
+  font-size: 28px;
+  color: #f5e6a3;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.thankyou {
+  color: #ccc;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.order-id {
+  margin-bottom: 30px;
+  color: #ddd;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* ORDER ITEMS */
+.items {
+  margin: 30px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 12px 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+
+.item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #444;
+}
+
+.item div {
+  flex: 1;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 15px;
+  color: #f5e6a3;
+}
+
+.item strong {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+/* TOTAL */
+.total {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 30px 0;
+  color: #ffd700;
+}
+
+/* DELIVERY BOX */
+.delivery-box {
+  background: #1c1c1c;
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #ffd700;
+  box-shadow: 0 6px 20px rgba(212,175,55,0.3);
+}
+
+/* TRUST TEXT */
+.trust {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+}
+
+/* NEXT OFFER */
+.next-offer {
+  background: linear-gradient(135deg, #d4af37, #ffd700);
+  color: black;
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 35px;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(212,175,55,0.25);
+  letter-spacing: 0.3px;
+  font-size: 15px;
+}
+
+/* BUTTONS */
+.actions {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+
+/* Primary Button */
+.actions .continue {
+  background: linear-gradient(135deg, #d4af37, #ffd700);
+  color: black;
+  box-shadow: 0 8px 25px rgba(212,175,55,0.4);
+}
+
+.actions .continue:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(212,175,55,0.6);
+}
+
+/* Secondary Button */
+.actions .track {
+  background: #333;
+  color: #ffd700;
+}
+
+.actions .track:hover {
+  background: #444;
+  transform: translateY(-3px);
+}
+
+/* ========================= */
+/* DELIVERY TRUCK ANIMATION - BLACK & GOLD THEME */
+/* ========================= */
+.delivery-animation {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: visible;
+}
+
+.truck-svg {
+  width: 240px;
+  height: 120px;
+  animation: truckDrive 6s linear infinite;
+}
+
+.wheel-group .wheel,
+.wheel-group .wheel-inner {
+  transform-origin: center;
+  animation: wheelRotate 1s linear infinite;
+}
+
+.wheel-group .wheel {
+  fill: #333;
+}
+
+.wheel-group .wheel-inner {
+  fill: #ffd700;
+}
+
+.road {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  height: 5px;
+  background: linear-gradient(to right, #444, #222);
+  border-radius: 4px;
+}
+
+/* Truck moves horizontally */
+@keyframes truckDrive {
+  0% { transform: translateX(-260px); }
+  100% { transform: translateX(260px); }
+}
+
+/* Wheels rotate naturally */
+@keyframes wheelRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ========================= */
+/* ANIMATIONS */
+@keyframes pop {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* SOFT GOLD CONFETTI GLOW */
+.confetti {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#ffd700 2px, transparent 2px);
+  background-size: 35px 35px;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .success-card {
+    padding: 40px 30px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item img {
+    margin-bottom: 10px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,330 @@
+/* ========================= */
+/* ACCOUNT PAGE - BLACK & GOLD LUXURY THEME */
+/* ========================= */
+.account-page {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  font-family: "Poppins", sans-serif;
+  color: #f5e6a3;
+}
+
+/* ========================= */
+/* SIDEBAR */
+/* ========================= */
+.account-sidebar {
+  width: 260px;
+  background: #111;
+  border-right: 1px solid #333;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 5px 0 20px rgba(0,0,0,0.5);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: #d4af37;
+  color: #111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: 0 5px 20px rgba(212,175,55,0.6);
+}
+
+.account-sidebar h3 {
+  margin-bottom: 30px;
+  color: #ffd700;
+  letter-spacing: 0.5px;
+}
+
+.account-sidebar nav button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: none;
+  background: #1c1c1c;
+  color: #f5e6a3;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(212,175,55,0.2);
+}
+
+.account-sidebar nav button:hover,
+.account-sidebar nav button.active {
+  background: linear-gradient(135deg, #d4af37, #ffd700);
+  color: #111;
+  box-shadow: 0 8px 25px rgba(212,175,55,0.5);
+}
+
+.logout {
+  background: #ff4d4d !important;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255,77,77,0.3);
+}
+
+/* ========================= */
+/* CONTENT AREA */
+/* ========================= */
+.account-content {
+  flex: 1;
+  padding: 50px;
+}
+
+/* ========================= */
+/* CARDS / SECTIONS */
+/* ========================= */
+.card {
+  background: rgba(20, 20, 20, 0.95);
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  margin-bottom: 25px;
+  color: #f5e6a3;
+  backdrop-filter: blur(10px);
+}
+
+.card h1 {
+  margin-top: 10px;
+  font-size: 36px;
+  color: #ffd700;
+  font-weight: 700;
+}
+
+.fade-in {
+  animation: fade 0.4s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* ========================= */
+/* INPUTS & BUTTONS */
+/* ========================= */
+input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  background: #1c1c1c;
+  color: #f5e6a3;
+  font-size: 15px;
+}
+
+.primary-btn {
+  margin-top: 18px;
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #d4af37, #ffd700);
+  color: #111;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 8px 25px rgba(212,175,55,0.5);
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(212,175,55,0.7);
+}
+
+/* ========================= */
+/* ORDER CARD LUXURY THEME */
+/* ========================= */
+.order-card {
+  border-radius: 18px;
+  padding: 25px;
+  margin-top: 20px;
+  background: #1c1c1c;
+  border: 1px solid #333;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  color: #ffd700;
+  margin-bottom: 6px;
+}
+
+.order-date {
+  font-size: 13px;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.delivery {
+  font-size: 13px;
+  color: #d4af37;
+  margin-bottom: 12px;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status.placed { background:#1a1a1a; color:#ffd700; border:1px solid #d4af37; }
+.status.shipped { background:#1a1a1a; color:#ffd700; border:1px solid #d4af37; }
+.status.delivered { background:#1a1a1a; color:#ffd700; border:1px solid #d4af37; }
+.status.cancelled { background:#1a1a1a; color:#ff4d4d; border:1px solid #ff4d4d; }
+
+/* ORDER ITEMS */
+.order-item {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
+  border-top: 1px solid #333;
+}
+
+.order-item img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #333;
+}
+
+.order-item p {
+  margin: 0;
+  font-weight: 500;
+  color: #f5e6a3;
+}
+
+.order-item small {
+  color: #ccc;
+}
+
+.order-total {
+  text-align: right;
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffd700;
+}
+
+.shipping-preview {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #d4af37;
+}
+
+/* ADDRESS ITEMS */
+.address-item {
+  display: flex;
+  justify-content: space-between;
+  background: #1c1c1c;
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 14px;
+  box-shadow: 0 6px 20px rgba(212,175,55,0.2);
+}
+
+.address-item button {
+  border: none;
+  background: #d4af37;
+  color: #111;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.address-item button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212,175,55,0.5);
+}
+
+/* ========================= */
+/* WALLET CARD */
+.card h1 {
+  margin-top: 10px;
+  font-size: 40px;
+  color: #ffd700;
+}
+
+/* ========================= */
+/* LOADING SHIMMER */
+.shimmer {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg,#222,#333,#222);
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+/* ========================= */
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .account-page {
+    flex-direction: column;
+  }
+
+  .account-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #333;
+  }
+
+  .account-content {
+    padding: 25px;
+  }
+
+  .order-item {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .order-total {
+    text-align: left;
+  }
+}
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.placed {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.shipped {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.status.delivered {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
